@@ -22,29 +22,31 @@ This project implements a Monte Carlo Tree Search (MCTS) algorithm to play the g
 
    ```bash
    git clone https://github.com/yourusername/tic-tac-toe-mcts.git
-Navigate to the project directory:
+## Navigate to the Project Directory
 
-bash
-Copy code
 cd tic-tac-toe-mcts
-Install the required dependencies:
 
-bash
-Copy code
+## Install the Required Dependencies
 pip install numpy
-Usage
+
+##Usage
 To start the game, run the neural.py script:
 
-bash
-Copy code
 python neural.py
-Input
+
+
+## Input
 Players take turns entering their moves by specifying the row and column (0-indexed).
 Example input: 1 1 for placing a mark in the center of the board.
-Board Representation
+
+## Board Representation
 The board is represented as a 3x3 NumPy array.
-0 indicates an empty space, 1 indicates a player's mark, and 2 indicates the AI's mark.
-Game Rules
+
+0 indicates an empty space
+1 indicates a player's mark
+-1 indicates the AI's mark
+
+## Game Rules
 The first player to align three marks in a row (horizontally, vertically, or diagonally) wins the game.
 If the board is full and no player has three marks in a row, the game is a draw.
 How MCTS Works
